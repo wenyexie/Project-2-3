@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+<div class="event-info">
+<h1>Trigger Bottle : Full'up Bottle to trigger the Event</h1>
+<h3>Set an Event or a Goal</h3>
+<input id="Event-name" type="text"/>
+</div>
+
+
+<div>
+  <img src="bottle.png"style="width:300px;height:420px;">
+</div>
+<div class="cup">
+<div class="remained" id="remained">
+<span id="liters">1.5L</span>
+<small>Remained</small>
+</div>
+<div class="percentage" id="percentage">
+20%
+</div>
+</div>
+
+<p class="text">
+Check in to fill the bottle and trigger the event/Goal you set
+</p>
+
+<div class="cups">
+<div class="cup cup-small">Check in 1</div>
+<div class="cup cup-small">Check in 2</div>
+<div class="cup cup-small">Check in 3</div>
+<div class="cup cup-small">Check in 4</div>
+<div class="cup cup-small">Check in 5</div>
+<div class="cup cup-small">Check in 6</div>
+<div class="cup cup-small">Check in 7</div>
+<div class="cup cup-small">Check in 8</div>
+<div class="cup cup-small">Check in 9</div>
+<div class="cup cup-small">Check in 10</div>
+<div class="cup cup-small">Check in 11</div>
+<div class="cup cup-small">Check in 12</div>
+<div class="cup cup-small">Check in 13</div>
+<div class="cup cup-small">Check in 14</div>
+<div class="cup cup-small">Check in 15</div>
+<div class="cup cup-small">Check in 16</div>
+</div>
+
+
+<div class="event-info2">
+<input id="info" type="text"/>
+<button id="button-event">Log the check in number</button>
+<div class="total-tracker">
+  <button id="get-tracker"> 'check in' tracker</button>
+<div id="checkin-info">
+</div>
+</div>
+</div>
+
+<div class="container">
+  <!-- View chat messages here here -->
+  <div class="sub-container chat-feed">
+      <div class="chat-header">Chat Box</div>
+      <div class="chat-box" id="chat-box-msgs"></div>
+  </div>
+
+  <!-- Enter chat messages here -->
+  <div class="sub-container chat-input">
+      <input type="text" class="chat-input-name" id="name-input" placeholder="Name" />
+      <input type="text" class="chat-input-msg" id="msg-input" placeholder="Message" />
+      <button id="send-button">Send</button>
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+</body>
+</html>
